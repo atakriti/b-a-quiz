@@ -149,15 +149,7 @@ let data = {
                 {answer:"meinem,s",isCorrect:false},
             ]
         },
-        {
-            question: "Ich habe __ Adresse meine_ Freund_ vergessen.",
-            options: [
-                { answer: "die,s,es", isCorrect: true },
-                {answer:"seine,en,-",isCorrect:false},
-                {answer:"meines,e,s",isCorrect:false},
-                {answer:"meine,m,s",isCorrect:false},
-            ]
-        },
+       
         {
             question: "Ich habe __ Adresse meine_ Freund_ vergessen.",
             options: [

@@ -12,6 +12,8 @@ function Header() {
   let [findUserState,setFindUserState] = useState(findUser)
       let handleSignout = () => {
             setIsSignedIn(false)
+       fetchingUsers().then(result => setUsers(result)) 
+
             setSignedIn({
                   email: "",
                   password:""
