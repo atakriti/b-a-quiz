@@ -5,8 +5,8 @@ let users = new Schema({
     username: String,
     password: String,
     email: String,
-    a1Level: {type:Number,default:1},
-    a2Level: {type:Number,default:0},
-    b1Level:{type:Number,default:0}
+    a1: {type:Boolean,default:false},
+    a2: {type:Boolean,default:false},
+    b1:{type:Boolean,default:false}
 })
 export default model("users",users)
