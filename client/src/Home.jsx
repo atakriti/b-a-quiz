@@ -1,13 +1,13 @@
 import React from 'react'
 import Baner from './Baner/Baner'
-import Swiper from './Swiper/Swiper'
+import LandingPage from './LandingPage/LandingPage'
 
 
 function Home() {
   return (
       <div>
           <Baner/>
-          <Swiper/>
+          <LandingPage/>
           
     </div>
   )

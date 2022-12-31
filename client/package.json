@@ -5,6 +5,10 @@
   "dependencies": {
     "@emailjs/browser": "^3.9.1",
     "@testing-library/jest-dom": "^5.16.5",
+    "@craco/craco": "^7.0.0-alpha.0",
+    "react-helmet": "^6.1.0",
+    "prop-types": "15.7.2",
+    "dangerous-html": "0.1.11",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "dotenv": "^16.0.3",
