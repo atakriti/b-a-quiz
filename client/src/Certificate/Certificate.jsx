@@ -36,6 +36,7 @@ function Certificate() {
   return (
       <div className='certificate'>
           <div className="certificate_container">
+              <h3 onClick={()=>setIsDownload(false)}>X</h3>
           <h1>Congratulation</h1>
           <h2 >Now you can download your Certificate</h2>
             <button onClick={handleDownload}>Download</button>
