@@ -16,6 +16,53 @@ header{
             }
         }
     }
+    // =============================== Max 800px ======================
+    .hamburgerMenu{
+        .hamburger{
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: 3;
+            padding: 1%;
+            svg{
+                font-size: 2rem;
+                fill: #38B6FF;
+                // fill: white;
+            }
+        }
+        .menu_{
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: translateX(100%);
+            background-color: #38B6FF;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            overflow-y: scroll;
+            z-index: 2;
+
+            a{
+                color: white;
+                text-decoration: none;
+                font-size: 1.3rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 4% 0;
+
+            }
+            &::-webkit-scrollbar{
+                display: none;
+            }
+        }
+    }
+    // ============================== Over 800px ===============
     nav{
         width: 35rem;
         display: flex;
@@ -31,5 +78,21 @@ header{
                 color: #38B6FF;
             }
         }
+    }
+}
+@keyframes menuOpen {
+    from{
+        transform: translateX(100%);
+    }to{
+        transform: translateX(0);
+        
+    }
+}
+@keyframes menuClose {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(100%);
+        
     }
 }

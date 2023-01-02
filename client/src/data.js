@@ -26,7 +26,8 @@ let data = {
                 {answer:"ihr",isCorrect:false},
                 {answer:"meiner",isCorrect:true},
             ]
-        },
+        }
+      
     ],
     // ===================================================
     a1 : [
@@ -70,7 +71,7 @@ let data = {
                 { answer: "Rightig", isCorrect: false },
                 {answer:"Falsch",isCorrect:true},
             ]
-        }
+        },
     ],
     // // ===================================================
       a2 : [
@@ -127,7 +128,50 @@ let data = {
                 {answer:"ihr",isCorrect:false},
                 {answer:"den",isCorrect:false},
             ]
-        }
+          },
+          {
+            question: "Ich spiele mit mein_ Bruder im Park.",
+            options: [
+                { answer: "e", isCorrect: false },
+                {answer:"er",isCorrect:true},
+                {answer:"en",isCorrect:false},
+                {answer:"em",isCorrect:false},
+            ]
+          },
+          {
+            question: "Ich lese mein_ Vater eine Geschichte vor.",
+            options: [
+                { answer: "e", isCorrect: false },
+                {answer:"er",isCorrect:false},
+                {answer:"en",isCorrect:false},
+                {answer:"em",isCorrect:true},
+            ]
+          },
+          {
+            question: "Ich fahre mit meinem Freund ins Kino.",
+            options: [
+                { answer: "Rightig", isCorrect: true },
+                {answer:"Falsch",isCorrect:false},
+            ]
+          },
+          {
+            question: "Ich gebe mein_ Tante eine Karte.",
+            options: [
+                { answer: "e", isCorrect: false },
+                {answer:"er",isCorrect:true},
+                {answer:"en",isCorrect:false},
+                {answer:"em",isCorrect:false},
+            ]
+          },
+          {
+            question: "Ich schenke dem Baby ein_ Spielzeug.",
+            options: [
+                { answer: "e", isCorrect: false },
+                {answer:"er",isCorrect:false},
+                {answer:"en",isCorrect:true},
+                {answer:"em",isCorrect:false},
+            ]
+          },
     ],
     // ============================== b1 ==========================
      b1 : [
@@ -176,7 +220,98 @@ let data = {
                 {answer:"der,hängt,der,des,s,ab",isCorrect:true},
                 {answer:"dem,hängt,der,des,s,ab",isCorrect:false},
             ]
-        }
+         },
+         {
+            question: "Wenn ich genug Geld __, __ ich gerne um die Welt reisen.",
+            options: [
+                { answer: "hätte,würde", isCorrect: true },
+                {answer:"würde,hätte",isCorrect:false},
+                {answer:"wäre,werde",isCorrect:false},
+                {answer:"haben,werde",isCorrect:false},
+            ]
+         },
+         {
+            question: "Es __ schön, wenn wir alle zusammen essen __.",
+            options: [
+                { answer:"wäre,haben", isCorrect: false },
+                {answer:"wäre,könnten",isCorrect:true},
+                {answer:"ist,haben",isCorrect:false},
+                {answer:"nichts richtig",isCorrect:false},
+            ]
+         },
+         {
+            question: "Wenn ich mehr Zeit __, __ ich gerne mehr Sport treiben",
+            options: [
+                { answer:"hätte,würde", isCorrect: true },
+                {answer:"würde,hätte",isCorrect:false},
+                {answer:"würde,bin",isCorrect:false},
+                {answer:"habe,bin",isCorrect:false},
+            ]
+         },
+         {
+            question: "Es __ besser, wenn du nicht so viel rauchen __",
+            options: [
+                { answer: "wäre,wirst", isCorrect: false },
+                { answer: "wäre,würdest", isCorrect: true },
+            { answer: "ist,würdest", isCorrect: false },
+            { answer: "ist,wirst", isCorrect: false }
+            ]
+         },
+         {
+            question: "Wenn ich genug Mut __, __ ich gerne fahren",
+            options: [
+                { answer: "würde,hätte", isCorrect: false },
+                { answer: "hätte,bin", isCorrect: false },
+                { answer: "hätte,würde", isCorrect: true },
+            { answer: "habe,bin", isCorrect: false }
+            ]
+         },
+         {
+            question: "Es __ toll, wenn wir alle zusammen in den Urlaub fahren __",
+            options: [
+            { answer: "wäre,könnten", isCorrect: true },
+            { answer: "wäre,kann", isCorrect: false },
+            { answer: "ist,könnten", isCorrect: false },
+            { answer: "ist,kann", isCorrect: false }
+            ]
+         },
+         {
+            question: "Wenn ich genügend Selbstvertrauen __, __ ich gerne eine Rede halten",
+            options: [
+                { answer: "würde,hätte", isCorrect: false },
+                { answer: "hätte,bin", isCorrect: false },
+                { answer: "habe,bin", isCorrect: false },
+                { answer: "hätte,würde", isCorrect: true }
+            ]
+            },
+            {
+                question: "Es __ schön, wenn du mir helfen __, das Zimmer aufzuräumen",
+                options: [
+                { answer: "wäre,könntest", isCorrect: true },
+                { answer: "wäre,kannst", isCorrect: false },
+                { answer: "ist,könntest", isCorrect: false },
+                { answer: "ist,kannst", isCorrect: false }
+                ]
+         },
+         {
+            question: "Wenn ich die richtigen Worte __, __ ich gerne meine Gefühle ausdrücken",
+            options: [
+                { answer: "würde,hätte", isCorrect: false },
+                { answer: "hätte,bin", isCorrect: false },
+                { answer: "hätte,würde", isCorrect: true }, 
+            { answer: "habe,bin", isCorrect: false }
+            ]
+         },
+         {
+            question: "Es __ gut, wenn wir früher losfahren __, um den Stau zu vermeiden",
+            options: [
+            { answer: "wäre,würden", isCorrect: true },
+            { answer: "wäre,werden", isCorrect: false },
+            { answer: "ist,würden", isCorrect: false },
+            { answer: "ist,werden", isCorrect: false }
+            ]
+            }
+        
     ]
 }
 

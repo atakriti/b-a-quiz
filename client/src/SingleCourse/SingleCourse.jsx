@@ -40,7 +40,7 @@ function SingleCourse() {
             setIsFalse(false)
             
         }   else {
-            alert("Its not correct")
+            // alert("Its not correct")
             setIsFalse(true)
             setClickedIndex(i)
             setAttempts(attempts + 1)
