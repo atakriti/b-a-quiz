@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Baner from './Baner/Baner'
 import LandingPage from './LandingPage/LandingPage'
 
 
+import Courses from './Courses/Courses'
+import Certificate from "./Certificate/Certificate"
+import { context } from './Context'
 function Home() {
+  let { signedIn,users,isDownload } = useContext(context)
+
   return (
       <div>
           <Baner/>
-          <LandingPage/>
           
+      <Courses />
+      {isDownload && (
+        <Certificate/>
+        )}
+        <LandingPage/>
     </div>
   )
 }

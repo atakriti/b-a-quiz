@@ -2,9 +2,11 @@
 import './LandingPage.scss';
 
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
+import video from "./BNA-Team-video-2.mp4";
+
 
 import Highlight from '../Highlight/Highlight'
 import Point from '../Point/Point'
@@ -12,6 +14,7 @@ import Footer from '../Footer/Footer'
 import './LandingPage.scss'
 
 const LandingPage = (props) => {
+  let navigate = useNavigate()
   return (
     <div className="home-container">
       <Helmet>
@@ -27,8 +30,7 @@ const LandingPage = (props) => {
               B &amp; A International Educational Courses For German Language
             </h1>
             <span className="home-caption">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt.
+            We Have different levels. the Students entering these Tests should have a minimum knowledge level of the German Language.
             </span>
             <div className="home-hero-buttons">
               <div className="home-i-o-s-btn">
@@ -86,11 +88,10 @@ const LandingPage = (props) => {
           </div>
           <div className="home-video-container">
             <video
-              src="https://www.youtube.com/watch?v=MRQ69XeDxVk"
-              loop
-              muted
-              poster="/playground_assets/pastedimage-09r-900w.png"
-              autoPlay
+            src={video} type="video/mp4"
+              // src="https://share.synthesia.io/32ce1054-2e94-4ded-9d3b-fbab964d3344"
+              controls
+        controlsList="nodownload"
               className="home-video1"
             ></video>
             <div className="home-heading-container">
@@ -99,12 +100,11 @@ const LandingPage = (props) => {
                   Build your dream career with us!
                 </span>
                 <span className="home-text02">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                Test yourself to see your level and there is a prize at the end. You will get a certificate.
                 </span>
               </div>
               <div className="home-explore">
-                <span className="home-text03">Explore our Courses -&gt;</span>
+                <span onClick={()=>navigate("/singleCourse/demo")} className="home-text03">Explore our Courses -&gt;</span>
               </div>
             </div>
           </div>
@@ -121,14 +121,14 @@ const LandingPage = (props) => {
             </div>
           </div>
           <div className="home-content2">
-            <h2 className="home-text07">Everything you get with A&amp;B App</h2>
+            <h2 className="home-text07">Everything you get with B&amp;A App</h2>
             <Highlight
-              Title="Lorem ipsum dolor sit amet, consectetur "
-              Description="Sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam, quis nostrud"
+              Title="Welcome to our world of German Language "
+              Description="Easy to access the tests"
             ></Highlight>
             <Highlight
-              Title="Lorem ipsum dolor sit amet, consectetur "
-              Description="Sed do eiusmod tempor incididunt ut labore et dolore"
+              Title="Discover your current German level "
+              Description="Take our multiple choice test in minutes"
             ></Highlight>
             <div className="home-explore1">
               <span>Explore our Courses -&gt;</span>
@@ -140,15 +140,14 @@ const LandingPage = (props) => {
             <div className="home-heading1">
               <h2 className="home-text09">Keep track your Answers</h2>
               <span className="home-text10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt.
+              This test is designed to assess your understanding of German grammar, vocabulary and phrasing. Each question is in the format of multiple choice and you will have a choice of 4 possible answers..
               </span>
             </div>
             <div className="home-content4">
               <div className="home-points">
-                <Point></Point>
-                <Point text="Quis nostrud exercitation ullamco"></Point>
-                <Point text="Reprehenderit qui in ea voluptate velit"></Point>
+                <Point text="Understand your German level"></Point>
+                <Point text="Find resources for your level"></Point>
+                <Point text="Improve your German level"></Point>
               </div>
               <Link to="/" className="home-navlink">
                 <div className="home-get-started">
@@ -198,7 +197,7 @@ const LandingPage = (props) => {
               </div>
               <div className="Question">
                 <span className="home-title2">
-                  What is sit amet, consectetur adipiscing elit, sed do?
+                What are the desired goals of this project ?
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -207,10 +206,7 @@ const LandingPage = (props) => {
                 </span>
                 <span className="home-description1">
                   <span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
+                  Our highly qualified German Quizzes are by your side and provide you with the right tools to help you interact confidently in the real world and achieve the professional and personal success you are working towards..
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',

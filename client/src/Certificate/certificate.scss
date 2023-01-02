@@ -1,0 +1,56 @@
+.certificate{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.733);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .certificate_container{
+        
+        width: min(100% - 5%,800px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        gap: 2rem;
+        background-color: white;
+        border-radius: 20px;
+        h3{
+            font-size: 1.3rem;
+            margin-right: auto;
+            cursor: pointer;
+        }
+        h1{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        button{
+            width: 40%;
+            border: none;
+            border-radius: 50px;
+            color: rgb(255, 255, 255);
+            background: linear-gradient(-180deg, rgb(255, 195, 50) 0%, rgb(255, 97, 119) 96%) no-repeat;
+            box-shadow: rgb(56 182 255 / 50%) 0px 4px 10px 0px;
+            padding: 2% 0;
+            font-size: 1rem;
+            letter-spacing: 0.4px;
+            cursor: pointer;
+            outline: none;
+            transition: 0.5s;
+            &:hover {
+                background: linear-gradient(-180deg, rgb(247, 251, 1) 0%, rgb(255, 165, 97) 96%) no-repeat;
+                box-shadow: rgb(255 97 119 / 50%) 0px 4px 10px 0px;
+                color: rgb(251, 9, 17);
+                transition: 0.5s;
+
+            }
+        }
+    }
+    
+}
