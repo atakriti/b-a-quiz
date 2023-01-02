@@ -11,38 +11,37 @@
         margin-left: 5%;
         align-items: center;
         padding: 3% 0%;
-        //width: 50%;
-        width: min(100% - 7%,700px);
+        width: 50%;
         // margin-left: auto;
 
-       
+        
 
         form {
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 100%;
+            width: 50%;
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
             padding: 5%;
 
             h1 {
                 color: rgb(89, 89, 89);
-                font-size: 2rem;
-                margin-bottom: 2rem;
+                font-size: 2vw;
+                margin-bottom: 8%;
             }
 
             input {
                 border-radius: 25px;
                 width: 100%;
-                padding: 2rem;
-                margin-bottom: 4rem;
+                padding: 3%;
+                margin-bottom: 12%;
                 border: none;
                 outline: none;
                 border: 1px solid gray;
                 background-color: transparent;
                 color: rgb(11, 11, 11);
-                font-size: 1.1rem;
+                font-size: 0.9vw;
 
                 &::-webkit-outer-spin-button,
                 &::-webkit-inner-spin-button {
@@ -52,14 +51,14 @@
 
             textarea {
                 width: 100%;
-                padding: 1.2rem;
-                margin-bottom: 2rem;
+                padding: 3%;
+                margin-bottom: 7%;
                 border: 1px rgb(157, 157, 157) solid;
                 border-radius: 10px;
                 outline: none;
                 background-color: transparent;
                 resize: none;
-                font-size: 1.1rem;
+                font-size: 0.9vw;
                 color: rgb(6, 6, 6);
             }
 
@@ -79,8 +78,8 @@
                 // line-height: 50px;
                 // box-sizing: border-box;
                 // text-decoration: none;
-                padding: 1rem 0;
-                font-size: 1.1rem;
+                padding: 2% 0;
+                font-size: 0.9vw;
                 letter-spacing: 0.4px;
                 cursor: pointer;
                 // position: relative;

@@ -6,7 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 import video from "./BNA-Team-video-2.mp4";
-
+// import Register from "./Register/Register";
 
 import Highlight from '../Highlight/Highlight'
 import Point from '../Point/Point'
@@ -104,7 +104,7 @@ const LandingPage = (props) => {
                 </span>
               </div>
               <div className="home-explore">
-                <span onClick={()=>navigate("/singleCourse/demo")} className="home-text03">Explore our Courses ––</span>
+                <span style={{textDecoration:"underline"}} onClick={()=>navigate("/singleCourse/demo")} className="home-text03">Explore our Courses</span>
               </div>
             </div>
           </div>
@@ -149,7 +149,7 @@ const LandingPage = (props) => {
                 <Point text="Find resources for your level"></Point>
                 <Point text="Improve your German level"></Point>
               </div>
-              <Link to="/" className="home-navlink">
+              <Link to="/register" className="home-navlink">
                 <div className="home-get-started">
                   <span className="home-sign-up">Get started now</span>
                 </div>
