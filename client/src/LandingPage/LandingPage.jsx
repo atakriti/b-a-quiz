@@ -104,7 +104,7 @@ const LandingPage = (props) => {
                 </span>
               </div>
               <div className="home-explore">
-                <span onClick={()=>navigate("/singleCourse/demo")} className="home-text03">Explore our Courses -&gt;</span>
+                <span onClick={()=>navigate("/singleCourse/demo")} className="home-text03">Explore our Courses ––</span>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ const LandingPage = (props) => {
               Description="Take our multiple choice test in minutes"
             ></Highlight>
             <div className="home-explore1">
-              <span>Explore our Courses -&gt;</span>
+              <span style={{textDecoration:"underline"}} onClick={()=>navigate("/singleCourse/demo")} >Explore our Courses </span>
             </div>
           </div>
         </div>
