@@ -73,7 +73,7 @@ function Header() {
             setFindUserState(findUser)
           },[users])
   return (
-      <header>
+      <header className='header'>
           <div className="logo">
               <Link to="/" ><img src={logo} alt="" /></Link>
               </div>

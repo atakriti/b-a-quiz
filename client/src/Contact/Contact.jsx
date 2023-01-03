@@ -30,10 +30,8 @@ function Contact() {
 
     return (
         <article >
-            {/* <Header home="Home"  menu="Menu" book="Book" cart="Cart" special="Special" /> */}
             <div className='contact-container'>
                 <div className='contact'>
-                    {/* <a ><img src={Logo} alt="" /></a> */}
                     <form onSubmit={handleSubmit}>
                         <h1>Contact Us</h1>
                         <input required value={value.name} onChange={handleChange} type="text" name="name" id="" placeholder='Enter your Full Name...' />

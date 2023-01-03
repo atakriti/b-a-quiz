@@ -51,7 +51,8 @@ function Register() {
   return (
       <div className='register'>
            {switchRegister === 1 && (
-          <form onSubmit={handleSubmitSignup}>
+              <form onSubmit={handleSubmitSignup}>
+                  <h1>Sign up</h1>
                   <input required onChange={handleChangeSignup} value={signupValue.username} type="text" name="username" id="" placeholder='Enter you name...' />
                   <input required onChange={handleChangeSignup} value={signupValue.email} type="email" name="email" id="" placeholder='Enter your E-Mail...' />
                   <input required onChange={handleChangeSignup} value={signupValue.password} type="password" name="password" id="" placeholder='Enter your Password...' />
@@ -60,7 +61,9 @@ function Register() {
           </form>
           )}
             {switchRegister === 2 && (
-          <form onSubmit={handleSubmitSignin}>
+              <form onSubmit={handleSubmitSignin}>
+                  <h1>Sign in</h1>
+                  
                   <input required onChange={handleChangeSignin} value={signedInValue.email} type="email" name="email" id="" placeholder='Enter your E-Mail...' />
                   <input required onChange={handleChangeSignin} value={signedInValue.password} type="password" name="password" id="" placeholder='Enter your Password...' />
                   <button>Sign in</button>

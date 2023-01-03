@@ -4,7 +4,8 @@
     background-image: url(../images/course.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 90vh;
+    min-height: 100vh;
+    padding-top: 3rem;
     .congratsContainer{
         position: absolute;
         top: 0;
@@ -22,6 +23,16 @@
         // width: 40%;
         width: min(100% - 5%,840px);
         margin-top: 1%;
+        .welcome_{
+            text-align: center;
+            font-size: 2rem;
+            color: white;
+            background-color: #0a3752;
+            padding: 1%;
+            max-width: 30rem;
+            margin: 2% auto;
+            border-radius: 20px;
+        }
         h3{
             text-align: center;
             font-size: 1.5rem;

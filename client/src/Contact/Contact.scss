@@ -1,17 +1,19 @@
 // @import "../style.scss";
 .contact-container {
 
-    height: 90vh;
+    height: 100vh;
     background: url(../images/contact-us.jpg) center center / cover no-repeat;
-
+    padding-top: 5rem;
     .contact {
 
         display: flex;
         // justify-content: space-around;
-        margin-left: 5%;
+        // margin:0  2% 0 5%;
         align-items: center;
-        padding: 3% 0%;
-        width: 50%;
+        // padding: 3% 0%;
+        // width: 30%;
+        width: min(100% - 5%,600px);
+        margin-left: 2.5%;
         // margin-left: auto;
 
         
@@ -20,14 +22,14 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            width: 50%;
+            width: 100%;
             background-color: rgb(255, 255, 255);
             border-radius: 10px;
-            padding: 5%;
+            padding: 2rem;
 
             h1 {
                 color: rgb(89, 89, 89);
-                font-size: 2vw;
+                font-size: 2.2rem;
                 margin-bottom: 8%;
             }
 
@@ -41,7 +43,7 @@
                 border: 1px solid gray;
                 background-color: transparent;
                 color: rgb(11, 11, 11);
-                font-size: 0.9vw;
+                font-size: 1rem;
 
                 &::-webkit-outer-spin-button,
                 &::-webkit-inner-spin-button {
@@ -58,7 +60,7 @@
                 outline: none;
                 background-color: transparent;
                 resize: none;
-                font-size: 0.9vw;
+                font-size: 1.2rem;
                 color: rgb(6, 6, 6);
             }
 
@@ -79,7 +81,7 @@
                 // box-sizing: border-box;
                 // text-decoration: none;
                 padding: 2% 0;
-                font-size: 0.9vw;
+                font-size: 1rem;
                 letter-spacing: 0.4px;
                 cursor: pointer;
                 // position: relative;

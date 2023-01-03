@@ -6,7 +6,7 @@ import Home from "./Home";
 import Contact from './Contact/Contact'
 import Register from "./Register/Register";
 import SingleCourse from "./SingleCourse/SingleCourse";
-import AboutUs from "./AboutUs/AboutUs";
+import About from "./About/About";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/about" element={<About/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/register" element={<Register/>}/>
         <Route path="/singleCourse/:type" element={<SingleCourse/>}/>

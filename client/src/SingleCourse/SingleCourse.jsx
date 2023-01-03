@@ -58,7 +58,8 @@ function SingleCourse() {
               </div>
           )}
          
-          <div className="singleCourseContainer">
+      <div className="singleCourseContainer">
+        <h1 className="welcome_">Welcome to {type[0].toUpperCase() + type.slice(1)}</h1>
               <h3>You have only 2 attempts</h3>
               <h2>Attempts {attempts}</h2>
               <h4>{switchQuiz} out of {data[type]?.length} – {(switchQuiz / data[type]?.length * 100).toFixed(0)}%</h4>

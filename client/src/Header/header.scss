@@ -1,8 +1,17 @@
-header{
+.header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5% 1%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    background-color: white;
+    @media only screen and (max-width:800px) {
+        padding: 2%;
+    }
     .logo{
         width: 5rem;
         margin-right: 2%;

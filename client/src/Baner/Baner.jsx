@@ -1,6 +1,7 @@
 import React from 'react'
 import "./baner.scss"
 import logo from "../images/logo.png"
+import Register from "../Register/Register"
 function Baner() {
   return (
     <div className='baner'>
@@ -14,6 +15,7 @@ function Baner() {
           
     </div>
   )
+
 }
 
 export default Baner
