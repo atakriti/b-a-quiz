@@ -9,7 +9,6 @@ import emailjs from '@emailjs/browser';
 function Contact() {
 
     let [value, setValue] = useState({ name: "", tel: "", email: "", message: "" })
-    console.log("🚀 ~ file: Contact.jsx ~ line 7 ~ Contact ~ value", value)
 
     let handleChange = (e) => {
         setValue({ ...value, [e.target.name]: e.target.value })
