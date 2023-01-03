@@ -39,7 +39,7 @@ const Footer = (props) => {
         <div className="footer-links">
           <div className="footer-column"></div>
           <div className="footer-column1">
-            <span className="footer-header">{props.Header1}</span>
+            <span onClick={handleIsOpen}  to="/about"                                        className="footer-header">{props.Header1}</span>
             <span className="footer-link">{props.Link5}</span>
             <span className="footer-link1">{props.Link6}</span>
             <span className="footer-link2">{props.Link7}</span>
@@ -58,7 +58,7 @@ Footer.defaultProps = {
   Link9: 'Careers',
   Link8: 'Partners',
   Link10: 'Press & Media',
-  text1: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  text1: 'An integrated team at your service in all fields.',
   Header1: 'Company',
   pastedImage_src: '/playground_assets/logo-200h.png',
   pastedImage_alt: 'pastedImage',

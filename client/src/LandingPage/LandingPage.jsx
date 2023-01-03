@@ -176,7 +176,7 @@ const LandingPage = (props) => {
             <div className="home-column2">
               <div className="Question">
                 <span className="home-title1">
-                  B&amp;A Course, Who we are ?
+                  B &amp; A Course, Who we are ?
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -184,10 +184,7 @@ const LandingPage = (props) => {
                   />
                 </span>
                 <span className="home-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                  qui officia deserunt mollit anim id est laborum.
+                We are B & A "Baha and Anwar" International Educational Courses, a group of Web Developers who Built this project specifically for people who want faster the language Learning
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -206,7 +203,7 @@ const LandingPage = (props) => {
                 </span>
                 <span className="home-description1">
                   <span>
-                  Our highly qualified German Quizzes are by your side and provide you with the right tools to help you interact confidently in the real world and achieve the professional and personal success you are working towards..
+                  Our highly qualified German Quizzes are by your side and provide you with the right tools to help you interact confidently in the real world and achieve the professional and personal success you are working towards.
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -215,8 +212,7 @@ const LandingPage = (props) => {
                   </span>
                   <br></br>
                   <span>
-                    tempor incididunt ut labore et dolore magna aliqua.
-                    Excepteur sint occaecat
+                 
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -229,7 +225,7 @@ const LandingPage = (props) => {
             <div className="home-column3">
               <div className="home-question2 Question">
                 <span className="home-title3">
-                  What we do ?
+                Why there’s no better way to learn German than online
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -237,13 +233,12 @@ const LandingPage = (props) => {
                   />
                 </span>
                 <span className="home-description2">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                A study by Coursera found that 87% of people who take online professional development quizzes and courses gain a direct benefit to their career afterward, such as getting a promotion, a raise, or starting a new career.
                 </span>
               </div>
               <div className="home-question3 Question">
                 <span className="home-title4">
-                  What is sit amet, consectetur adipiscing elit, sed do?
+                Learn from anywhere
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -251,8 +246,7 @@ const LandingPage = (props) => {
                   />
                 </span>
                 <span className="home-description3">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna.
+                As long as you have a phone or laptop, you can take online German quizzes and courses from anywhere, even the comfort of your own bed (although we don’t recommend it). By avoiding an unnecessary commute to class, you can save yourself lots of time.
                 </span>
               </div>
             </div>
@@ -266,8 +260,7 @@ const LandingPage = (props) => {
               Get started with B&amp;A Course now!
             </h2>
             <span className="home-text19">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore magna.
+            That’s pretty impressive, especially since you can gain all these benefits in a completely flexible way.
             </span>
           </div>
           <div className="home-hero-buttons1">
