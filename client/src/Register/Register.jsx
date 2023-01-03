@@ -38,6 +38,8 @@ function Register() {
                 email: signedInValue.email,
                 password:signedInValue.password
             })
+            
+            fetchingUsers().then(result => setUsers(result)) 
             setIsSignedIn(true)
             navigate("/")
 

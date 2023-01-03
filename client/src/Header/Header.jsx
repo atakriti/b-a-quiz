@@ -15,6 +15,7 @@ function Header() {
   let { isSignedIn,setIsSignedIn,setSignedIn,setSignedInValue,signedIn,users,fetchingUsers,setUsers,setIsDownload } = useContext(context)
   let findUser = users.find(user => user.email === signedIn.email)
   let [findUserState,setFindUserState] = useState(findUser)
+      console.log("🚀 ~ file: Header.jsx:18 ~ Header ~ findUserState", findUserState)
       let handleSignout = () => {
             setAnimateMenu(!animateMenu)
             setTimeout(()=>(setIsOpen(!isOpen)),300)
@@ -34,7 +35,7 @@ function Header() {
             setAnimateMenu(!animateMenu)
             setTimeout(()=>(setIsOpen(!isOpen)),300)
             setFindUserState({...findUserState,a1:false,a2:false,b1:false})
-            await axios.put(`http://localhost:4000/update/${findUserState._id}`, { ...findUserState, a1: false, a2: false, b1: false })
+            await axios.put(`http://localhost:4000/update/${findUserState?._id}`, { ...findUserState, a1: false, a2: false, b1: false })
        fetchingUsers().then(result => setUsers(result)) 
 
             alert("The courses are reset it")
@@ -135,7 +136,7 @@ function Header() {
           <Link to="/register">Sign in</Link>
                 )}
                
-                
+                          
       </nav>
 )}
     </header>
