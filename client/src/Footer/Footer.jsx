@@ -39,7 +39,7 @@ const Footer = (props) => {
         <div className="footer-links">
           <div className="footer-column"></div>
           <div className="footer-column1">
-            <span onClick={handleIsOpen}  to="/about"                                        className="footer-header">{props.Header1}</span>
+            <span      className="footer-header">{props.Header1}</span>
             <span className="footer-link">{props.Link5}</span>
             <span className="footer-link1">{props.Link6}</span>
             <span className="footer-link2">{props.Link7}</span>
