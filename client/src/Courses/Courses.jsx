@@ -7,9 +7,8 @@ import "./courses.scss"
 function Courses() {
   let navigate = useNavigate()
   let {users,signedIn,isSignedIn} = useContext(context)
-  let findUser = users.find(user => user.email === signedIn.email)
+  let findUser = users?.find(user => user?.email === signedIn?.email)
     let [findUserState,setFindUserState] = useState(findUser)
-  console.log("🚀 ~ file: Courses.jsx:9 ~ Courses ~ findUserState", findUserState)
 
   let a1 = () => {
     // to={`${findUserState?.a1 === true ? "/" : "/singleCourse/a1"}`}

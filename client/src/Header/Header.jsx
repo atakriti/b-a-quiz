@@ -15,7 +15,6 @@ function Header() {
   let { isSignedIn,setIsSignedIn,setSignedIn,setSignedInValue,signedIn,users,fetchingUsers,setUsers,setIsDownload } = useContext(context)
   let findUser = users.find(user => user.email === signedIn.email)
   let [findUserState,setFindUserState] = useState(findUser)
-      console.log("🚀 ~ file: Header.jsx:18 ~ Header ~ findUserState", findUserState)
       let handleSignout = () => {
             setAnimateMenu(!animateMenu)
             setTimeout(()=>(setIsOpen(!isOpen)),300)

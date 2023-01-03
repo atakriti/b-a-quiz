@@ -11,25 +11,33 @@ function SingleCourse() {
     let findUser = users.find(user => user.email === signedIn.email)
     let [findUserState,setFindUserState] = useState(findUser)
     let { type } = useParams();
+    console.log("🚀 ~ file: SingleCourse.jsx:14 ~ SingleCourse ~ type", type)
     // let findCourse = findUserState?.includes(type)
     // console.log("🚀 ~ file: SingleCourse.jsx:12 ~ SingleCourse ~ findCourse", findCourse)
     let [switchQuiz, setSwitchQuiz] = useState(0);
+    console.log("🚀 ~ file: SingleCourse.jsx:17 ~ SingleCourse ~ switchQuiz", switchQuiz)
     let [isFalse, setIsFalse] = useState(false)
     let [clickedIndex, setClickedIndex] = useState()
     let [attempts, setAttempts] = useState(0)
-    let [isCongrats,setIsCongrats] = useState(false)
-    let handleNext = async (i, item) => {
+  let [isCongrats, setIsCongrats] = useState(false)
+  console.log(" data[type]?.length ", data[type]?.length);
+  let handleNext = async (i, item) => {
      
-        if (switchQuiz === data[type]?.length - 1) {
-            setFindUserState({...findUserState,[type]:true})
+        if (switchQuiz === data[type]?.length - 1 && item?.isCorrect ) {
+          setFindUserState({ ...findUserState, [type]: true })
+         
+          if (!data.hasOwnProperty('demo')) {
             await axios.put(`http://localhost:4000/update/${findUserState._id}`, { ...findUserState, [type]: true })
+            }
+          
             setIsCongrats(true)
             setTimeout(() => setIsCongrats(false), 3000)
             setTimeout(() => navigate("/"), 3000)
        fetchingUsers().then(result => setUsers(result)) 
        if (switchQuiz === data?.b1?.length - 1 && type === 'b1') {
         setIsDownload(true)
-      }
+       }
+          
         } else if (item?.isCorrect) {
             setSwitchQuiz(switchQuiz + 1)
             setIsFalse(false)
