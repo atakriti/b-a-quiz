@@ -12,6 +12,7 @@ import Highlight from '../Highlight/Highlight'
 import Point from '../Point/Point'
 import Footer from '../Footer/Footer'
 import './LandingPage.scss'
+import apk from "../app.apk"
 
 const LandingPage = (props) => {
   let navigate = useNavigate()
@@ -33,22 +34,22 @@ const LandingPage = (props) => {
             We Have different levels. the Students entering these Tests should have a minimum knowledge level of the German Language.
             </span>
             <div className="home-hero-buttons">
-              <div className="home-i-o-s-btn">
+              {/* <div className="home-i-o-s-btn">
                 <img
                   alt="pastedImage"
                   src="/playground_assets/pastedimage-zmzg.svg"
                   className="home-apple"
                 />
                 <span className="home-caption1">Download for iOS</span>
-              </div>
-              <div className="home-android-btn">
+              </div> */}
+              <a href={apk} download={apk} className="home-android-btn">
                 <img
                   alt="pastedImage"
                   src="/playground_assets/pastedimage-ld65.svg"
                   className="home-android"
                 />
                 <span className="home-caption2">Download for Android</span>
-              </div>
+              </a>
             </div>
           </div>
           <div className="home-images">
@@ -264,22 +265,22 @@ const LandingPage = (props) => {
             </span>
           </div>
           <div className="home-hero-buttons1">
-            <div className="home-i-o-s-btn1">
+            {/* <div className="home-i-o-s-btn1">
               <img
                 alt="pastedImage"
                 src="/playground_assets/pastedimage-zmzg.svg"
                 className="home-apple1"
               />
               <span className="home-caption3">Download for iOS</span>
-            </div>
-            <div className="home-android-btn1">
+            </div> */}
+            <a href={apk} download={apk} className="home-android-btn1">
               <img
                 alt="pastedImage"
                 src="/playground_assets/pastedimage-ld65.svg"
                 className="home-android1"
               />
-              <span className="home-caption4">Download for Android</span>
-            </div>
+              <span  className="home-caption4">Download for Android</span>
+            </a>
           </div>
         </div>
       </div>
