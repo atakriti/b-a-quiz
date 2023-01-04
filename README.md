@@ -38,7 +38,7 @@ This Project is for the students who want to kick off with the languages, take t
 ### Contact
 
 Mail: <anwart256@gmail.com><br>
-Mail:<Baha.hasim@dci.student><br>
+Mail:<baha.alden.job@gmail.com><br>
 GitHub: [atakriti](https://github.com/atakriti)<br>
 GitHub: [Bhasim](https://github.com/Bhasim)<br>
 LinkedIn: [Anwar Takriti](https://www.linkedin.com/in/anwar-takriti-232029248)<br>
