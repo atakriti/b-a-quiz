@@ -16,7 +16,7 @@ This Project is for the students who want to kick off with the languages, take t
 
 **[Test this app yourself](#)**
 
-<img src="images-RM/chrome-capture.gif"  width="999" height="509"/>
+<img src="client/src/images/images-RM/chrome-capture.gif"  width="999" height="509"/>
 
 ---
 
