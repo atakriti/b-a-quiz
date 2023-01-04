@@ -23,9 +23,9 @@ function SingleCourse() {
         if (switchQuiz === data[type]?.length - 1 && item?.isCorrect ) {
           setFindUserState({ ...findUserState, [type]: true })
          
-          if (!data.hasOwnProperty('demo')) {
+         
             await axios.put(`/update/${findUserState._id}`, { ...findUserState, [type]: true })
-            }
+            
           
             setIsCongrats(true)
             setTimeout(() => setIsCongrats(false), 3000)
