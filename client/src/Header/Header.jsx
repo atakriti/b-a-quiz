@@ -34,20 +34,20 @@ function Header() {
             setAnimateMenu(!animateMenu)
             setTimeout(()=>(setIsOpen(!isOpen)),300)
             setFindUserState({...findUserState,a1:false,a2:false,b1:false})
-            await axios.put(`http://localhost:4000/update/${findUserState?._id}`, { ...findUserState, a1: false, a2: false, b1: false })
+            await axios.put(`/update/${findUserState?._id}`, { ...findUserState, a1: false, a2: false, b1: false })
        fetchingUsers().then(result => setUsers(result)) 
 
-            alert("The courses are reset it")
+            alert("The Quiz are reset it")
       }
       // =================================== Download ============================
 
       const pdf = new jsPDF();
-      let text = `                     Thank you for visiting our Course \n
-        Congratulation ${findUserState?.username} you completed the course \n
+      let text = `                     Thank you for visiting our quizzes \n
+        Congratulation ${findUserState?.username} you completed the quizzes \n
            This Certificate is for fun, it is Fake and not Real \n
                only to remember that you could make it \n
               Your B & A Team want to let you know that, \n
-        you can repeat the course by clicking on start again \n
+        you can repeat the quizzes by clicking on start again \n
         and downloading the certificate again from the Menu \n
 
 

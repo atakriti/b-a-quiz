@@ -17,7 +17,7 @@ function Register() {
     }
     let handleSubmitSignup = async (e) => {
         e.preventDefault()
-        await axios.post("http://localhost:4000/user", signupValue)
+        await axios.post("/user", signupValue)
         alert("Your registration is successfully done ")
        fetchingUsers().then(result => setUsers(result)) 
         setSwitchRegister(2)

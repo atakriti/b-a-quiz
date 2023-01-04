@@ -15,7 +15,7 @@ function Context(props) {
 
     // =========================================================================
     let fetchingUsers = async () => {
-        let fetching = await fetch("http://localhost:4000/getAllUsers")
+        let fetching = await fetch("/getAllUsers")
         let json = await fetching.json()
         return json
     }

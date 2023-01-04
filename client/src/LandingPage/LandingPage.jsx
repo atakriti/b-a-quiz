@@ -27,7 +27,7 @@ const LandingPage = (props) => {
         <div className="home-hero">
           <div className="home-content">
             <h1 className="home-title">
-              B &amp; A International Educational Courses For German Language
+              B &amp; A International Educational Quizzes For German Language
             </h1>
             <span className="home-caption">
             We Have different levels. the Students entering these Tests should have a minimum knowledge level of the German Language.
@@ -104,7 +104,7 @@ const LandingPage = (props) => {
                 </span>
               </div>
               <div className="home-explore">
-                <span style={{textDecoration:"underline"}} onClick={()=>navigate("/singleCourse/demo")} className="home-text03">Explore our Courses</span>
+                <span style={{textDecoration:"underline"}} onClick={()=>navigate("/singleCourse/demo")} className="home-text03">Explore our Quizzes</span>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ const LandingPage = (props) => {
               Description="Take our multiple choice test in minutes"
             ></Highlight>
             <div className="home-explore1">
-              <span style={{textDecoration:"underline"}} onClick={()=>navigate("/singleCourse/demo")} >Explore our Courses </span>
+              <span style={{textDecoration:"underline"}} onClick={()=>navigate("/singleCourse/demo")} >Explore our Quizzes </span>
             </div>
           </div>
         </div>
@@ -176,7 +176,7 @@ const LandingPage = (props) => {
             <div className="home-column2">
               <div className="Question">
                 <span className="home-title1">
-                  B &amp; A Course, Who we are ?
+                  B &amp; A Quiz, Who we are ?
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -184,7 +184,7 @@ const LandingPage = (props) => {
                   />
                 </span>
                 <span className="home-description">
-                We are B & A "Baha and Anwar" International Educational Courses, a group of Web Developers who Built this project specifically for people who want faster the language Learning
+                We are B & A "Baha and Anwar" International Educational Quizzes, a group of Web Developers who Built this project specifically for people who want faster the language Learning
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -257,7 +257,7 @@ const LandingPage = (props) => {
         <div className="home-content6">
           <div className="home-heading3">
             <h2 className="home-text18">
-              Get started with B&amp;A Course now!
+              Get started with B&amp;A Quiz now!
             </h2>
             <span className="home-text19">
             That’s pretty impressive, especially since you can gain all these benefits in a completely flexible way.

@@ -24,7 +24,7 @@ function SingleCourse() {
           setFindUserState({ ...findUserState, [type]: true })
          
           if (!data.hasOwnProperty('demo')) {
-            await axios.put(`http://localhost:4000/update/${findUserState._id}`, { ...findUserState, [type]: true })
+            await axios.put(`/update/${findUserState._id}`, { ...findUserState, [type]: true })
             }
           
             setIsCongrats(true)

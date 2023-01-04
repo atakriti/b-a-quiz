@@ -1,6 +1,6 @@
-# B & A COURSE
+# B & A Quiz
 
-### Fullstack (_languages course_) Project Made by B & A Team.
+### Fullstack (_languages Quiz_) Project Made by B & A Team.
 
 ##### - Anwar Takriti.
 ##### - Baha Alden Hasim.
@@ -9,7 +9,7 @@
 
 ##### About Project
 
-###### B & A COURSE 
+###### B & A Quiz 
 This Project is for the students who want to kick off with the languages, take the quizzes, complete them and then take your Certificate as a gift from us, this Project was built specifically for people who want faster languages learning.
 
 ---

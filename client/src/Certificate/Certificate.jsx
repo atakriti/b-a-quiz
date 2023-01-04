@@ -9,12 +9,12 @@ function Certificate() {
     let [findUserState, setFindUserState] = useState(findUser)
    
     const pdf = new jsPDF();
-    let text = `                     Thank you for visiting our Course \n
-        Congratulation ${findUserState?.username} you completed the course \n
+    let text = `                     Thank you for visiting our Quizzes \n
+        Congratulation ${findUserState?.username} you completed the Quizzes \n
            This Certificate is for fun, it is Fake and not Real \n
                only to remember that you could make it \n
               Your B & A Team want to let you know that, \n
-        you can repeat the course by clicking on start again \n
+        you can repeat the Quizzes by clicking on start again \n
         and downloading the certificate again from the Menu \n
 
 
