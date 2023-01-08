@@ -11,7 +11,8 @@ function Context(props) {
         password:""
     })
     let [isSignedIn, setIsSignedIn] = useLocalStorage("isSignedIn", false)
-    let [isDownload,setIsDownload] = useState(false)
+    let [isDownload, setIsDownload] = useState(false)
+    let [isLoading,setIsLoading] = useState(false)
 
     // =========================================================================
     let fetchingUsers = async () => {
@@ -21,11 +22,12 @@ function Context(props) {
     }
     let [users, setUsers] = useState([])
     useEffect(() => {
-       fetchingUsers().then(result => setUsers(result)) 
+        setIsLoading(true)
+       fetchingUsers().then(result => setUsers(result)).then(() => setIsLoading(false)) 
     }, [])
    
   return (
-      <context.Provider value={{signedIn, setSignedIn,signedInValue, setSignedInValue,isSignedIn,setIsSignedIn,users, setUsers,fetchingUsers,isDownload,setIsDownload}}>{ props.children}</context.Provider>
+      <context.Provider value={{signedIn, setSignedIn,signedInValue, setSignedInValue,isSignedIn,setIsSignedIn,users, setUsers,fetchingUsers,isDownload,setIsDownload,isLoading}}>{ props.children}</context.Provider>
   )
 }
 
