@@ -68,7 +68,7 @@ Footer.defaultProps = {
   pastedImage_alt: 'pastedImage',
   Link7: 'News',
   Link5: 'About',
-  text: '© 2022 B&A. All Rights Reserved.',
+  text: '2022 B&A',
   Link6: 'Team',
 }
 
