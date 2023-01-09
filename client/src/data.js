@@ -133,9 +133,9 @@ let data = {
             question: "Ich spiele mit mein_ Bruder im Park.",
             options: [
                 { answer: "e", isCorrect: false },
-                {answer:"er",isCorrect:true},
+                {answer:"er",isCorrect:false},
                 {answer:"en",isCorrect:false},
-                {answer:"em",isCorrect:false},
+                {answer:"em",isCorrect:true},
             ]
           },
           {
