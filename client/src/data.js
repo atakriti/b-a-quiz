@@ -164,12 +164,12 @@ let data = {
             ]
           },
           {
-            question: "Ich schenke dem Baby ein_ Spielzeug.",
+            question: "Ich schenke __ Baby ein Spielzeug.",
             options: [
-                { answer: "e", isCorrect: false },
-                {answer:"er",isCorrect:false},
-                {answer:"en",isCorrect:true},
-                {answer:"em",isCorrect:false},
+                { answer: "der", isCorrect: false },
+                {answer:"den",isCorrect:false},
+                {answer:"dem",isCorrect:true},
+                {answer:"die",isCorrect:false},
             ]
           },
     ],
